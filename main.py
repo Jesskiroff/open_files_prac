@@ -1,5 +1,15 @@
-file = open("my_file.txt")
+# file = open("my_file.txt")
 
-contents = file.read()
+# contents = file.read()
 
-print(contents)
+# print(contents)
+
+# file.close()
+
+# with open("my_file.txt") as file:
+#     contents = file.read()
+#     print(contents)
+
+
+with open ("my_file.txt", mode = "a") as file:
+    file.write("\nNew text.")
